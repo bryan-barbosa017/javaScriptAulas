@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 6</title>
+</head>
+<body>
+    <script>
+        let ano = parseFloat(prompt("Digite seu ano de nascimento: "));
+        let idade = 2026 - ano;
+
+        if(idade <= 15){
+            alert("Você não pode votar");
+        }else if(idade <= 17 || idade >= 70){
+            alert("Seu voto é facultativo");
+        }else{
+            alert("Seu voto é obrigatório");
+        }
+    </script>
+</body>
+</html>

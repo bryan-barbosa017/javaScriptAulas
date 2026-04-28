@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 10</title>
+</head>
+<body>
+    <script>
+        let valor = parseFloat(prompt("Digite o valor do produto: "));
+        let porcentagem = parseFloat(prompt("Digite a porcentagem de desconto: "));
+
+        let desconto = porcentagem / 100;
+        let desconto2 = valor * desconto;
+        let final = valor - desconto2;
+
+        if(final >= 0){
+            alert("O total a pagar é " +final);
+        }       
+    </script>
+</body>
+</html>

@@ -33,7 +33,7 @@ console.log("Sistema Bancário\n");
 
 console.log("O usuário do",nomeBanco,"chamado",nomePessoa,"com o número da agência",numeroAgencia,"e número da conta",numeroConta,"possui",saldo,"reais na conta.\n");
 
-console.log(nomePessoa,"mandou um pix de 50 reais para seu irmão","\nRecebeu 100 reais de seu patrão","\nGanhou 30 reais de sua mãe","\nGastou 40 reais no mercado","\nComprou uma roupa de 25 reais\n");
+console.log(nomePessoa,"mandou um pix de 100 reais para seu irmão","\nRecebeu 50 reais de seu patrão","\nGanhou 30 reais de sua mãe","\nGastou 40 reais no mercado","\nComprou uma roupa de 25 reais\n");
 
 console.log("O usuário do",nomeBanco,"chamado",nomePessoa,"com o número da agência",numeroAgencia,"e número da conta",numeroConta,"possui",saldoNovo,"reais na conta.\n");
 

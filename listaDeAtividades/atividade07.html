@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 7</title>
+</head>
+<body>
+    <script>
+        let saldo = parseFloat(prompt("Digite seu saldo: "));
+
+        if(saldo <= 200){
+            alert("Você não tem saldo");
+        }else if(saldo >=201 && saldo < 401){
+            alert("Você tem 20% de crédito em "+saldo+ " reais");
+        }else if(saldo >=401 && saldo < 601){
+            alert("Você tem 30% de crédito em "+saldo+ " reais");
+        }else if(saldo >=601){
+            alert("Você tem 40% de crédito em "+saldo+ " reais");
+        }
+    </script>
+</body>
+</html>
