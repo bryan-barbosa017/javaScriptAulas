@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="html.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 02 - Múltiplo de 3</title>
+</head>
+<body>
+    <script>
+        let inicio = parseInt(prompt("Digite o número inicial:"));
+        let fim = parseInt(prompt("Digite o número final:"));
+
+        let soma = 0;
+
+        for(let i = inicio; i <= fim; i++){
+            if(i % 3 == 0){
+                soma += i;
+                console.log(`Os números múltiplos de 3 são: ${i}`)
+            }
+        }
+
+        alert(`A soma dos múltiplos de 3 é: ${soma}`);
+    </script>
+</body>
+</html>

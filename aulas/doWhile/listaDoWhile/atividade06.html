@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 06</title>
+</head>
+<body>
+    <script>
+        let menor = 1;
+        let maior = 12;
+        let numeroSecreto = Math.floor(Math.random() * (maior - menor + 1)) + menor;
+        let chute;
+        let tentativas = 0;
+
+        do{
+    chute = Number(prompt(`Adivinhe o numero entre ${menor} e ${maior}`));
+    tentativas++;
+
+        if (chute > numeroSecreto) 
+    alert("Seu chute é muito alto, tente novamente!")
+        else if (chute < numeroSecreto) 
+    alert("Seu chute é muito baixo, tente novamente!")
+        else
+    alert(`Parabéns! Você acertou o número secreto em ${tentativas} tentativas! :D`);
+    }while (chute !== numeroSecreto);
+    </script>
+</body>
+</html>

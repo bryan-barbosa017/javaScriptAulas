@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="html.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 05</title>
+</head>
+<body>
+    <script>
+let voto;
+
+let claudia = 0;
+let carlos = 0;
+let neves = 0;
+let nulo = 0;
+let branco = 0;
+
+let total = 0;
+
+while (true) {
+    voto = parseInt(prompt(
+`Digite o número do candidato ou 0 para sair:
+
+1 - Claudia Rodrigues
+2 - Carlos Luz
+3 - Neves Rocha
+4 - Nulo
+5 - Branco`
+    ));
+
+    if (voto === 0) {
+        break;
+    }
+
+    switch (voto) {
+        case 1:
+            claudia++;
+            break;
+        case 2:
+            carlos++;
+            break;
+        case 3:
+            neves++;
+            break;
+        case 4:
+            nulo++;
+            break;
+        case 5:
+            branco++;
+            break;
+        default:
+            alert("Voto inválido!");
+            continue;
+    }
+
+    total++;
+}
+
+if (total === 0) {
+    alert("Nenhum voto registrado.");
+} else {
+
+    let porcNulo = (nulo / total) * 100;
+    let porcBranco = (branco / total) * 100;
+
+    let vencedor = "";
+    let maior = Math.max(claudia, carlos, neves);
+
+    if (maior === claudia) {
+        vencedor = "Claudia Rodrigues";
+    } else if (maior === carlos) {
+        vencedor = "Carlos Luz";
+    } else {
+        vencedor = "Neves Rocha";
+    }
+
+    alert(
+`RESULTADO:
+
+Claudia Rodrigues: ${claudia} votos
+Carlos Luz: ${carlos} votos
+Neves Rocha: ${neves} votos
+
+Nulos: ${nulo} votos (${porcNulo.toFixed(2)}%)
+Brancos: ${branco} votos (${porcBranco.toFixed(2)}%)
+
+Vencedor: ${vencedor}`);
+}
+</script>
+</body>
+</html>

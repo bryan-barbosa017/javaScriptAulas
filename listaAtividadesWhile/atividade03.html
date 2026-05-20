@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="html.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 03</title>
+</head>
+<body>
+    <script>
+        let zero = 0;
+        let quantidade = 0;
+        let total = 0;
+
+        while(zero == 0){
+            numero = parseInt(prompt("Digite um número:"))
+            if(numero !== 0){
+                total += numero;
+                quantidade++;
+            }else{
+                const media = total / quantidade;
+                alert(`Foram digitados ${quantidade} números e a media deles é ${media}`)
+                break;
+            }
+        }
+    </script>
+</body>
+</html>

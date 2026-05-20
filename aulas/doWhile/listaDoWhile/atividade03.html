@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 03</title>
+</head>
+<body>
+    <script>
+       
+let totalCobaias = 0;
+let totalCoelhos = 0;
+let totalRatos = 0;
+
+for (let i = 1; i <= 15; i++) {
+    let quantidade = parseInt(prompt(`Digite a quantidade de cobaias da experiência ${i}:`));
+    let codigo = parseInt(prompt(`Digite o código (1 = Coelho, 2 = Rato):`));
+
+    totalCobaias += quantidade;
+
+    if (codigo === 1) {
+        totalCoelhos += quantidade;
+    } else if (codigo === 2) {
+        totalRatos += quantidade;
+    } else {
+        alert("Código inválido! Considere apenas 1 ou 2.");
+        i--;
+    }
+}
+
+let percCoelhos = (totalCoelhos / totalCobaias) * 100;
+let percRatos = (totalRatos / totalCobaias) * 100;
+
+console.log("Total de cobaias:", totalCobaias);
+console.log("Total de coelhos:", totalCoelhos);
+console.log("Total de ratos:", totalRatos);
+console.log("Percentual de coelhos:", percCoelhos.toFixed(2) + "%");
+console.log("Percentual de ratos:", percRatos.toFixed(2) + "%");
+
+    </script>
+</body>
+</html>

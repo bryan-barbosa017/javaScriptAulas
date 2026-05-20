@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="html.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 03</title>
+</head>
+<body>
+    <script>
+    let inicio = parseInt(prompt("Digite o número inicial:"));
+    let fim = parseInt(prompt("Digite o número final:"));
+
+    let par = 0;
+    let impar = 0;
+
+    for(let i = inicio; i <= fim; i++){
+
+        if(i % 2 == 0){
+            par++;
+            console.log(`Número par: ${i}`);
+        } else {
+            impar++;
+            console.log(`Número ímpar: ${i}`);
+        }
+    }
+
+    console.log(`Quantidade de números pares: ${par}`);
+    console.log(`Quantidade de números ímpares: ${impar}`);
+</script>
+</body>
+</html>

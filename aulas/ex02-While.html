@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="html.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 02-Média</title>
+</head>
+<body>
+    <script>
+        let total=0;
+        let quantidade=0;
+        let numero=0;
+        while(numero !== -1){
+            numero = parseInt(prompt("Digite um número(-1 para sair):"))
+            if(numero !== -1){
+                total += numero;
+                quantidade++;
+            }
+        }
+
+        if(quantidade > 0){
+            const media = total / quantidade;
+            alert(`O total é ${total}, você digitou ${quantidade} vezes e a média dos valores digitados é ${media.toFixed(2)}`)
+        }else{
+            alert("Nenhum valor foi digitado");
+        }
+    </script>
+</body>
+</html>

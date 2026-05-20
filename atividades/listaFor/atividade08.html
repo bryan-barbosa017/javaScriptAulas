@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="html.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 08</title>
+</head>
+<body>
+    <script>
+    let numero = parseInt(prompt("Digite o número da tabuada:"));
+    let inicio = parseInt(prompt("Começar por:"));
+    let fim = parseInt(prompt("Terminar em:"));
+
+    if(fim < inicio){
+
+        console.log("O valor final não pode ser menor que o inicial.");
+
+    } else {
+
+        console.log(`Tabuada do ${numero}:`);
+
+        for(let i = inicio; i <= fim; i++){
+
+            console.log(`${numero} x ${i} = ${numero * i}`);
+
+        }
+    }
+</script>
+</body>
+</html>

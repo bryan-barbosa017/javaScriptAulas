@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="html.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 04</title>
+</head>
+<body>
+    <script>
+        let total = 0;
+        let totalItens = 0;
+
+while (true) {
+    let numero = parseInt(prompt("Digite o código do produto (0 para sair):"));
+
+    if (numero === 0) {
+        break;
+    }
+
+    if (numero === 100) {
+        total += 1.70;
+        totalItens++;
+    } else if (numero === 101) {
+        total += 2.30;
+        totalItens++;
+    } else if (numero === 102) {
+        total += 2.60;
+        totalItens++;
+    } else if (numero === 103) {
+        total += 2.40;
+        totalItens++;
+    } else if (numero === 104) {
+        total += 2.50;
+        totalItens++;
+    } else if (numero === 105) {
+        total += 1.00;
+        totalItens++;
+    } else {
+        alert("Código inválido!");
+    }
+}
+
+alert(`Você comprou ${totalItens} itens e o valor total a pagar é R$ ${total.toFixed(2)}`);
+    </script>
+</body>
+</html>
